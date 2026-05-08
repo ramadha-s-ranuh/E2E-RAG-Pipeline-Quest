@@ -1,0 +1,34 @@
+[
+  {
+    "name": "knowledge_base",
+    "utterances": [
+      "What unique feature makes the Luminafox glow in the dark?",
+      "How does the Luminafox attract its prey?",
+      "Which folklore belief is associated with sighting a Luminafox?",
+      "What adaptation allows the Aquaflare to survive near volcanic isles?",
+      "What does the Aquaflare feed on in its extreme environment?",
+      "Give me 3 aquatic animals",
+      "Name 2 nocturnal creatures mentioned in the dataset",
+      "List 3 animals that can generate or store electricity",
+      "Which 2 creatures are known to glow or emit light?"
+    ]
+  },
+  {
+    "name": "general",
+    "utterances": [
+      "What is the capital of France?",
+      "General knowledge question",
+      "Tell me about history",
+      "What is the meaning of life?",
+      "How does photosynthesis work?",
+      "What are the benefits of exercise?",
+      "Tell me about space exploration",
+      "What is machine learning?",
+      "How do plants grow?",
+      "What is the population of Tokyo?",
+      "How do I make a cake?",
+      "Why is the sky blue?"
+    ]
+  }
+]
+
