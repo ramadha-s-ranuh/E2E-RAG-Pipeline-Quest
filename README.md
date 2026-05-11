@@ -76,6 +76,11 @@ The repository includes 7 progressively advanced pipeline examples:
 | `pipeline_5.py` | **Guardrails** | Integrates a guardrail manager with phrase-matching engines to intercept and block unsafe or banned queries before they reach the retriever. |
 | `pipeline_6.py` | **Query Transformation** | Uses an LLM-based One-to-One Query Transformer to rewrite and optimize the user's initial prompt for better vector retrieval. |
 | `pipeline_7.py` | **Multimodal Handling** | Demonstrates image processing capabilities by formatting image attachments (e.g., `dog1.png`, `dog2.png`) and passing them to a multimodal LLM for context-aware visual synthesis. |
+| `pipeline_8.py` | **Caching** | Integrates a cache for eliminating redundant behavior in linear pipeline. |
+| `pipeline_9.py` | **RAG with Dynamic Models** | A standard linear pipeline where the model is dynamic / not fixed. |
+| `pipeline_10.py` | **Subgraphs** | Compose complex workflows by nesting smaller, reusable pipeline subgraphs within a larger parent pipeline. |
+| `pipeline_11.py` | **Parallel Pipeline Processing** | Parallel execution of multiple independent steps (e.g., retrieving from multiple sources or querying models simultaneously) to improve latency. |
+| `pipeline_12.py` | **Pipeline Step Exclusion** | Selectively omit or bypass certain predefined steps in a pipeline during execution based on runtime configuration. |
 
 ---
 
@@ -88,18 +93,18 @@ e2e-rag-pipeline-quest/
 │   ├── response_synthesizer.py
 │   ├── semantic_router.py
 │   └── handlers.py
-├── pipeline_1.py
-├── pipeline_2.py
-├── pipeline_3.py
-├── pipeline_4.py
-├── pipeline_5.py
-├── pipeline_6.py
-├── pipeline_7.py
+├── pipelines/
+│   ├── pipeline_1.py
+│   ├── pipeline_2.py
+    ...
+│   ├── pipeline_9.py
+│   └── pipeline_12.py
 ├── indexer.py
 ├── route_examples.json
 └── .env
 ```
 
 - **`/modules`** — Contains reusable components (`retriever.py`, `response_synthesizer.py`, `semantic_router.py`, `handlers.py`).
+- **`/pipelines`** — Contains the executable pipeline scripts demonstrating various RAG patterns and architectures.
 - **`indexer.py`** — The ingestion script responsible for loading raw CSV data, generating embeddings, and persisting them to a local ChromaDB instance.
 - **`route_examples.json`** — Defines the utterance examples used to train the semantic router's intents.
